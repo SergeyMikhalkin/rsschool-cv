@@ -43,6 +43,11 @@ body {
     cursor: pointer;
 }
 
+.main-container {
+    width: 50%;
+    margin: auto;
+}
+
 .footer {
     min-height: 100px;
     background-color: #24292f;

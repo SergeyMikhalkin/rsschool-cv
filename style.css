@@ -42,3 +42,51 @@ body {
     color: red;
     cursor: pointer;
 }
+
+.footer {
+    min-height: 100px;
+    background-color: #24292f;
+    color: white;
+    display: flex;
+}
+
+.footer-container {
+    align-items: center;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-item {
+    margin: 30px;
+    padding: 0 40px;
+    line-height: 50px;
+    font-size: 2em;
+}
+
+.footer-link {
+    vertical-align: middle;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.logo {
+    width: 180px;
+    height: 60px;
+    background-image: url("./assets/svg/rs_school_js.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.year {
+    font-weight: 800;
+}

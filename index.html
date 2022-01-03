@@ -1,7 +1,124 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>CV</title>
-    </head>
-    <body></body>
+<html lang="en">
+
+<head>
+    <title>CV</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main main-container">
+        <section class="section" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <ul>
+                <li>Location: Navapolatsk, Belarus</li>
+                <li>Phone: +375 29 710 02 67</li>
+                <li>Email: Sergey.Mikhalkin.dev@gmail.com</li>
+                <li>GitHub account: <a href="https://github.com/SergeyMikhalkin">https://github.com/SergeyMikhalkin"</a></li>
+                <li>LinkedIn account: <a href="https://linkedin.com/in/sergey-mikhalkin">https://linkedin.com/in/sergey-mikhalkin</a></li>
+            </ul>
+        </section>
+        <section class="section" id="summary">
+            <h2 class="section-title">Summary</h2>
+            <p>
+                Since 2016 work as a Software developer at oil refinery.
+                But my dream is to become a REAL software engineer. 
+                Strongly believe that programming languages are the tools for achieving working goals. 
+            </p>
+        </section>
+        <section class="section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>C#</li>
+                <li>SQL</li>
+                <li>Xamarin</li>
+            </ul>
+        </section>
+        <section class="section" id="code">
+            <h2 class="section-title">Code example</h2>
+            <pre>
+                public static bool CalcViscosity(double viscosity1, double quantity1, double viscosity2, double quantity2, out double
+                result)
+                {
+                    result = 0;
+                
+                    try
+                    {
+                    double a = quantity1 * Math.Log10(Math.Log10(viscosity1 + 0.8d));
+                    double b = quantity2 * Math.Log10(Math.Log10(viscosity2 + 0.8d));
+                
+                    double c = Math.Pow(10.0d, (a + b) / (quantity1 + quantity2));
+                    c = Math.Pow(10.0d, c);
+                    c -= 0.8d;
+                
+                    result = c;
+                    }
+                    catch (Exception)
+                    {
+                    return false;
+                }
+                
+                return true;
+                }
+            </pre>
+        </section>
+        <section class="section" id="courses">
+            <h2 class="section-title">Courses</h2>
+            <ul>
+                <li>Epam (ASP.NET)</li>
+                <li>Andersen (Web development)</li>
+                <li>RS School (Front-end)</li>
+            </ul>
+        </section>
+        <section class="section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <p>Not yet</p>
+        </section>
+        <section class="section" id="education">
+            <h2 class="section-title">Education</h2>
+            <p>
+                Polotsk State University (Computers, Systems and Networks)
+            </p>
+        </section>
+        <section class="section" id="languages">
+            <h2 class="section-title">Languages</h2>
+            <ul>
+                <li>Russian (native)</li>
+                <li>English (B1)</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-list">
+                <div class="footer-item year">2022</div>
+                <div class="footer-item"><span></span><a href="https://github.com/sergeymikhalkin"
+                        class="footer-link">sergeymikhalkin</a></div>
+                <a href="https://rs.school/js/" class="logo"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
